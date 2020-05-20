@@ -7,6 +7,10 @@ import ast
 from rest_framework.exceptions import ParseError
 from .service import create_update_tea
 from rest_framework.decorators import action
+from django.shortcuts import render
+
+def home(request):
+    return render(request,'index.html')
 
 # Create your views here.
 class TeaViewSet(viewsets.ModelViewSet):

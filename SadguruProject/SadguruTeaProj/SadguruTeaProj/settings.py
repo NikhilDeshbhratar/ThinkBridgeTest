@@ -23,9 +23,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'whr4ay&l49c8ekrgjw+_(g-v)kh!k!a&j5_o=laz*@o%^#z5ab'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ["127.0.0.1"]
+ALLOWED_HOSTS = ["127.0.0.1","localhost"]
 CORS_ORIGIN_ALLOW_ALL = True
 
 # Application definition
@@ -56,11 +56,11 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'SadguruTeaProj.urls'
-
+print(BASE_DIR,"BASEEE")
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

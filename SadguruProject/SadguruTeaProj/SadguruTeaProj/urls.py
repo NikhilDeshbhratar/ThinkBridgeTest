@@ -25,7 +25,8 @@ router = routers.DefaultRouter()
 router.register(r'tea', TeaViewSet)
 
 urlpatterns = [
-    url(r'^api/', include(router.urls))
+    url(r'^api/', include(router.urls)),
+    path(r'newapp/',include("tea_app.urls"))
 ]
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
