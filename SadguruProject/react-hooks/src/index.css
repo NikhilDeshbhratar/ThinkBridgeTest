@@ -1,0 +1,58 @@
+button,
+.button {
+  margin-bottom: 0 !important;
+  margin-right: 0.5rem;
+}
+.my-custom-scrollbar {
+  position: absolute;
+  height: 500px;
+  overflow: auto;
+}
+.table-wrapper-scroll-y {
+  display: block;
+}
+tr:nth-child(even) {
+  background-color: #dedede;
+}
+.cell {
+	max-width: 50px; /* tweak me please */
+	white-space : nowrap;
+	overflow : hidden;
+  }
+  
+.expand-small-on-hover:hover {
+max-width : 200px; 
+text-overflow: ellipsis;
+}
+  
+.expand-maximum-on-hover:hover {
+max-width : initial; 
+}
+h2{
+	font: normal normal normal 20px/1 Helvetica, arial, sans-serif;
+	border-bottom: 2px solid #000;
+	background:rgb(195, 239, 250);
+	color:rgb(10, 5, 5);
+	text-align: center;
+	padding:10px;
+  }
+h1{
+	font: normal normal normal 20px/1 Helvetica, arial, sans-serif;
+	border-bottom: 2px solid #000;
+	background:rgb(187, 226, 218);
+	color:rgb(10, 5, 5);
+	text-align: center;
+	padding:10px;
+  }
+
+/* table.floatThead-table {
+    border-top: none;
+    border-bottom: none;
+    background-color: #fff;
+} */
+
+th {
+  position: sticky;
+  top: 0px;
+  background: white;
+}
